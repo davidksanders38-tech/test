@@ -1,0 +1,47 @@
+
+(Be clear about inputs and outputs)
+(Use acceptance criteria)
+(Reference specific files rather than describing them)
+(Use simple examples)
+(Be explicit with names and instructions)
+(Specify what NOT to do)
+
+1. Set up the initial project structure for [project]
+
+The project should have:
+- src/
+  - main.py          (FastAPI app entry point)
+  - models.py        (SQLAlchemy models)
+  - schemas.py       (Pydantic schemas)
+  - database.py      (DB engine, session, init)
+  - routers/
+    - tasks.py       (task CRUD endpoints)
+- tests/
+  - conftest.py      (pytest fixtures: test client, test DB)
+  - test_tasks.py    (placeholder test file)
+- requirements.txt
+
+Before writing any files, describe your plan.
+
+2. Implement [component]
+Requirements:
+- [requirements]
+
+Before writing:
+- read [source] to understand current state
+
+Acceptance criteria:
+- Able to [function]
+
+3. Write comprehensive tests in tests/ for implementation
+Tests should cover:
+- [tests]
+- Add tests for anything else appropriate
+
+Requirements:
+- Use implementation of src/
+- Use descriptive test function names that state what they test
+- Run tests after implementation. If any fail, fix either the test or the implementation (whichever is wrong) and rerun.
+
+4. Review the entire codebase for the following issues and fix any you find:
+
